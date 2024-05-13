@@ -1,0 +1,11 @@
+{
+    "markdown.styles":
+    [
+                                "CSS\\md.css",
+                                "CSS\\md.js" ,
+    ]   ,
+
+    "editor.codeActionsOnSave":
+    
+    {        "quickfix.biome":   "explicit"       }
+}
