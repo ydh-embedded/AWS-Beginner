@@ -39,3 +39,7 @@
     -   ist ein Online Speicher mächtiger als DropBox
     -   kann auch html online verfügbar machen
 
+## install
+
+![Config](./screens/KW20/AWS%20I-invert.png)
+
