@@ -9,4 +9,25 @@
 
 -   im Skill Builder kann man Übungen starten
 -   AWS - Cloud Server steht in Frankfurt
--   AWS - Cloud ist skalierbar
+-   AWS - Cloud ist skalierbar (vertikale skalierung)
+
+
+# EC2
+
+-   Ist eine virtuelle Maschine in AWS
+-   Amazon Elastic Cloud 2 
+
+# secruity Group
+
+-   Firewall ( Port config)
+
+
+# Load Balancer
+
+-   verteilt anfragen auf den WebServer
+
+
+# Auto-Scalling-Group
+-   bevor der WebServer in die Knie geht würde AWS eine neue Instanz aufsetzen repliziert 
+-   würde dann zusätzliche Kosten anwerfen
+
