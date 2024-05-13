@@ -32,7 +32,9 @@
 
 ## Frankfurt
 
-    -   eine Region mit 3 Avaibility Zones
+    -   eine Region mit 3 Avaibility Zones (physisch getrennt)
+    -   rendundant gewährleistet
+    -   
 
 ## S3
 
@@ -42,4 +44,30 @@
 ## install
 
 ![Config](./screens/KW20/AWS%20I-invert.png)
+
+
+## DNS - Service 
+
+## Route 53
+
+    -   mit r53 kann man seine eigene Domaine in die Cloud ziehen
+    -   Domain hosting möglich
+
+## SDKs
+
+    -   erstellen automatisiert AWS Resourcen
+    -   deployment Kits (bitte baue mir das , das , das )
+
+
+## snow-cone
+    -   einzelne Festplatten an AWS schicken
+    -   oder USB-Stick
+
+## snow-ball
+    -   AWS schick einem Server man spielt die Daten drauf und schickt diese zurück
+
+## snow-mobil
+    -   LKW dieser wird bereitgestellt um alle Daten in den Truck zu laden um cloud anbieter an AWS zu binden
+
+## snow
 
