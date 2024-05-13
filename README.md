@@ -32,7 +32,9 @@
 
 ## Frankfurt
 
-    -   eine Region mit 3 Avaibility Zones
+    -   eine Region mit 3 Avaibility Zones (physisch getrennt)
+    -   rendundant gewährleistet
+    -   
 
 ## S3
 
@@ -43,3 +45,10 @@
 
 ![Config](./screens/KW20/AWS%20I-invert.png)
 
+
+## DNS - Service 
+
+## Route 53
+
+    -   Domaine in die Cloud ziehen
+    -   Domain hosten
