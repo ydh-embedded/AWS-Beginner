@@ -69,5 +69,13 @@
 ## snow-mobil
     -   LKW dieser wird bereitgestellt um alle Daten in den Truck zu laden um cloud anbieter an AWS zu binden
 
-## snow
 
+## Speicher
+
+    -   EBS liegt in einer Einer Avability Zone
+
+## Bucket
+
+    -   kann eine WebSite hosten
+
+## RDS Amazon Relation Database
