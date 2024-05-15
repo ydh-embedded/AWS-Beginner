@@ -330,6 +330,25 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 	sudo mysql -u root -p
 .
 
+	sudo cp -r ~/wordpress/* /var/www/html/
+.
+
+	sudo nano /etc/apache2/sites-available/000-default.conf
+.
+
+	DocumentRoot /var/www/html
+.
 	
+	sudo systemctl restart apache2
+.
+
+	SELECT User, Host FROM mysql.user;
+
+.
+###	wp-config kontrollieren
+
+[Wordpress](https://api.wordpress.org/secret-key/1.1/salt/)
+
+
 
 
