@@ -124,6 +124,8 @@ i-083725d85cd5f5601 (dannys-EC2-for-Wordpress)
 
 	
 	sudo  yum install mySQL -y
+
+
 ### Zuweisung der Datenbank zur Machine
 
 	export MYSQL_HOST=db-dannys-aws-machine.ctfu1ip0w6hu.eu-central-1.rds.amazonaws.com.
@@ -220,3 +222,23 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 	STRG + L
 
+
+
+
+. 
+## Terminal Befehle Linux Ubuntu :
+
+	sudo apt-get install mysql-server -y
+
+### Benutzer anlegen
+
+	mysql -u root -p
+.
+
+	CREATE USER 'adwin'@'localhost' IDENTIFIED BY 'password';
+.
+
+	GRANT ALL PRIVILEGES ON databasename.* TO'adwin'@'localhost';
+.
+
+	FLUSH PRIVILEGES;
