@@ -242,3 +242,94 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 .
 
 	FLUSH PRIVILEGES;
+
+### Apache installieren
+
+	sudo apt-get update
+.
+
+	sudo apt-get install apache2 -y
+
+### Dienst Starten
+
+	sudo systemctl start apache2
+.
+
+### wordpress install
+
+	wget https://Wordpress.org/latest.tar.gz
+.
+
+	tar -xzf latest.tar.gz
+.
+
+	cd wordpress
+.
+	ls
+
+
+### config DAtei anpassen
+
+	cp wp-config-sample.php wp-config.php
+.
+
+	ls
+.
+
+	sudo nano wp-config.php
+
+.
+
+	cp wp-config-sample.php wp-config.php
+
+.
+````ps
+	define ('DB_NAME' , 	'dannysWordpress'	);
+	define ('DB_USER' , 	'root'				);
+	define ('DB_PASSWORD' , 'Pa$$w0rd'			);
+	define ('DB_HOST' , 	'db-dannys-aws-machine-ctfulip0w6hu.eu-central-1.rds.amazonaws.com');
+	define ('DB_CHARSET',	'utf8'				);
+	define ('DB_COLLATE',	''					);
+````
+
+.
+
+```ps
+define('AUTH_KEY',         '@5H0Q8tBp*uIV%CK)`W0yflB`0Xlf|<]G/:O,H=;NOfq;XQI<_+}?`z*jq+[PuTv');
+define('SECURE_AUTH_KEY',  'r4eC{`wFA/gk0U*w6(C++&R8d,`1}r&@=J3+C8SYw`KZC/#_&7D|aHH-tr;WO/2^');
+define('LOGGED_IN_KEY',    'QBQUQ ?Ut!yJqmCCx-iPUL>6F&j^uVN+4$)/d5A`TA`=$|XX>-GkTSY.3sa)0bw(');
+define('NONCE_KEY',        'c(:dl>iN%_;.b-+/|+vBury2(-t]u8@ySwJaero{d)9}rIs=llMTiG6]#.vw}ahq');
+define('AUTH_SALT',        'Of`rOa,/[Ay4+}#!5!q:+I-J|TTW`v -,MM/;mmv0l#4Sc6Ka|jd+X9D6c9Qs=|=');
+define('SECURE_AUTH_SALT', 'LI[B*3B+oT=FyE?dU!e|rJb-9e..>rJ4h`DN}Sm3</r89oa]KH= SHo|JZS;qozF');
+define('LOGGED_IN_SALT',   ')WJ0}WRA(;-]D<C)G%)W~@>v2Y?NVNT9d4|T<;Inms1|woa[s.y:O4b <-n,QiIN');
+define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+(W8-;c 4+@3#');
+
+```
+.
+
+### extras installieren
+
+	sudo apt-get install apache2 mariadb-server php php7.2 php7.2-{cli,mysql,xml}
+
+.
+
+	sudo systemctl start apache2
+
+.
+	
+	sudo systemctl enable apache2
+
+.
+
+	sudo mysql_secure_installation
+.
+
+	CREATE USER 'adwin'@'localhost' IDENTIFIED BY 'password';
+.
+
+	sudo mysql -u root -p
+.
+
+	
+
+
