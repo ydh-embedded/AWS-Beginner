@@ -20,6 +20,8 @@ DB-Instance-Kennung (so heißt die Machine):
 
 ### arn:aws:rds:eu-central-1:847447911644:db:db-dannys-aws-machine-wordpress  Öffentliche IPv4-Adresse:
 
+    nicht Öffentlich
+
 	
 		
 
