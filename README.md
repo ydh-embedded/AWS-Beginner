@@ -359,4 +359,24 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 
 
+### html erstellen
+	
+	sudo touch index.html
+
+### nano
+
+	sudo nano index.html
+
+.
+
+	<html><boby><h1>Ich bin eine Überschrift in der 172.21.22.39</h1></body></html>
+
+.
+
+	sudo service httpd start
+
+.
+
+	sudo chkconfig httpd on
+
 
