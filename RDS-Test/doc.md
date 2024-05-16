@@ -37,6 +37,23 @@ define('LOGGED_IN_SALT',   'lIoEXoSwNIbc<!:-eBVP~ls-Nl3y4f:&CPk8uBV-Wf#998||3GD2
 define('NONCE_SALT',       '/)qew6C5oiD+RNx+C) 9i~[%G1:K!#ttioI+CsbN(9@e(|;Il@%Q+T5$q>E)UpdQ');
 ````
 
+
+### EC2 Instance öffentliche Adresse:
+
+    3.121.232.229
+
+### EC2 Instance Benutzer:
+
+    root
+
+### EC2 Instance ID:
+
+    i-00518abfff9c82633 (Dannys_EC2_Maria_DB)
+
+### DatenBank Endpunkt zur machine zuweisen
+
+    export MYSQL_HOST=db-dannys-aws-machine-wordpress.ctfu1ip0w6hu.eu-central-1.rds.amazonaws.com
+
 	
 		
 
