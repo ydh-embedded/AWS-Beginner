@@ -148,7 +148,7 @@ i-083725d85cd5f5601 (dannys-EC2-for-Wordpress)
 	sudo yum install httpd -y
 .
 
-	sudo service https start
+	sudo service httpd start
 
 #### wordpress runter laden
 
@@ -162,12 +162,16 @@ i-083725d85cd5f5601 (dannys-EC2-for-Wordpress)
 
 	cd wordpress
 .
-^^	ls
-.
-	cp wp-config-sample.php wp-config.php
-.
+
 	ls
 .
+
+	cp wp-config-sample.php wp-config.php
+.
+
+	ls
+.
+
 	sudo nano wp-config.php
 .
 	
@@ -175,7 +179,8 @@ i-083725d85cd5f5601 (dannys-EC2-for-Wordpress)
 #### wordpress wp-config anpassen
 
 -	define ( ... );
-	'DB_USER', 'dannysWordpress';
+
+		'DB_USER', 'dannysWordpress';
 .
 
 
@@ -202,6 +207,7 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 #### wordpress mit Inhalt in WebServer Standard-Pfad kopiert
 	sudo cp -r wordpress/* /var/www/html/
 .
+
 	sudo service httpd restart
 .	
 #### in auto start einfügen
@@ -212,6 +218,7 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 	cd /var/www/html
 .
+
 	ls
 .
 #### Inhalte anzeigen lassen (alternative zu >> tree /f <<)
@@ -265,6 +272,7 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 	cd wordpress
 .
+
 	ls
 
 
