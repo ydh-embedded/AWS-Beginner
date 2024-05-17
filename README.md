@@ -123,7 +123,7 @@ i-083725d85cd5f5601 (dannys-EC2-for-Wordpress)
 ## Terminal Befehle Linux Arch :
 
 	
-	sudo  yum install mySQL -y
+	sudo  yum install mysql -y
 
 
 ### Zuweisung der Datenbank zur Machine
