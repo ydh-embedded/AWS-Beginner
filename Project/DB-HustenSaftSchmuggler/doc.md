@@ -13,18 +13,31 @@
 - Amazon-Ressourcenname (ARN) s3ofwordpress
 	arn:aws:s3:::s3ofwordpress
 - IAM -> Richtlinie -> JSON
+
+
 ````json
+
 {
-	"Version": "2012-10-17",
-	"Statement": [
-		{
-			"Sid": "Statement1",
-			"Effect": "Allow",
-			"Action": ["s3:ListAllMyBuckets" , "s3:ListBucket" , "s3:GetObject" , "s3:DeleteObject"],
-			"Resource": ["arn:aws:s3:::s3ofwordpress" , "arn:aws:s3:::s3ofwordpress/*" , "arn:aws:s3:::s3ofwordpress"]
-		}
-	]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:GetObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::s3ofwordpress",
+                "arn:aws:s3:::s3ofwordpress/*",
+                "arn:aws:s3:::s3ofwordpress"
+            ]
+        }
+    ]
 }
+
 ````
 
 - Instance-ID
