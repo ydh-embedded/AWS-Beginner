@@ -4,3 +4,30 @@ i-08627b502a741f030 (Dannys-Instance)
 Öffentliche IPv4-Adresse	  3.68.150.21
 
 Private IPv4-Adressen 		172.31.1.164
+
+
+
+DB-Kennung
+dannys-wordpress-instance
+CPU
+-
+Status		Klasse		Rolle		Aktuelle Aktivität	Engine
+Verfügbar	db.t3.micro	Instance				MySQL Community
+
+									Region und AZ
+									eu-central-1a
+
+
+RDS > Datenbanken > dannys-wordpress-instance
+
+Endpunkt und Port:
+Endpunkt	dannys-wordpress-instance.ctfu1ip0w6hu.eu-central-1.rds.amazonaws.com
+Port		3306
+
+Datenbankname:	dbDannysWordpress
+
+
+
+in wordpress:
+
+	deinemail@bla.com
