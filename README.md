@@ -263,7 +263,7 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 	tcp_wrappers=YES
 	pasv_min_port=1024
 	pasv_max_port=1048
-	 3.68.150.21
+	pasv_address=3.68.150.21
 	
 
 .
@@ -279,6 +279,21 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 
 
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
 
 ## Terminal Befehle Linux Ubuntu :
 
