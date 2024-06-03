@@ -256,8 +256,14 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 	allow_writeable_chroot=YES
 
 .
+### ganz unten ein paar Zeilen in die vsftpd.conf einfügen
 
-	http://3.68.150.21/
+	pam_service_name=vsftpd
+	userlist_enable=NO
+	tcp_wrappers=YES
+	pasv_min_port=1024
+	pasv_max_port=1048
+	 3.68.150.21
 	
 
 .
@@ -265,6 +271,11 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 	sudo adduser danny
 	sudo passwd admin
+	sudo usermod -d /var/www/html/ danny
+
+	cd /var/www/html/
+	sudo usermod -a -G root danny
+	sudo service vsftpd restart
 
 
 
