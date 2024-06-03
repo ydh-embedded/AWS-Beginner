@@ -178,9 +178,15 @@ i-083725d85cd5f5601 (dannys-EC2-for-Wordpress)
 	
 #### wordpress wp-config anpassen
 
--	define ( ... );
-
-		'DB_USER', 'dannysWordpress';
+.
+````ps
+	define ('DB_NAME' , 	'dannysWordpress'	);
+	define ('DB_USER' , 	'root'				);
+	define ('DB_PASSWORD' , 'Pa$$w0rd'			);
+	define ('DB_HOST' , 	'db-dannys-aws-machine-ctfulip0w6hu.eu-central-1.rds.amazonaws.com');
+	define ('DB_CHARSET',	'utf8'				);
+	define ('DB_COLLATE',	''					);
+````
 .
 
 
