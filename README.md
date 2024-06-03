@@ -233,6 +233,42 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 
 . 
+
+
+### Sicherheitrolle anpassen
+
+	PORT:	21				Anywhere		Zugang
+	PORT:	1024 - 1048		Anywhere	FTP-Zugang
+
+### Fileserver installieren
+	sudo yum install vsftpd -y
+
+### FileServer Config anpassen
+	sudo nano /etc/vsftpd/vsftpd.conf
+
+### unter der vsftpd.conf ändern
+
+	#chroot_local_user=YES
+
+.
+
+	chroot_local_user=YES
+	allow_writeable_chroot=YES
+
+.
+
+	http://3.68.150.21/
+	
+
+.
+### neuen Benutzer anlegen
+
+	sudo adduser danny
+	sudo passwd admin
+
+
+
+
 ## Terminal Befehle Linux Ubuntu :
 
 	sudo apt-get install mysql-server -y
