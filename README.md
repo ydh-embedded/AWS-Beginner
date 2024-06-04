@@ -329,11 +329,45 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 .
 
     sudo nano constants.js
+.
+
+	sudo upm start
+.
 
 
 
+
+## JSON - Datei für das s3-Bucket 
+-	wenn wir eine Mitarbeiter Tabelle im s3 Bucket erstellen wollen brauchen wir: 
+	-	Berechtigungsrolle mit EC2 Anbindung	 
+	-	s3-Bucket 
+	-	bestimmte Richtlinie
+	-	Management-Console (WebAPI) von AWS
+	-	Tabelle erstellen mit den Namen von der constants.js
 
 .
+````json
+{   "Version": "2024-06-04",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action":
+			[ 
+				"s3:ListAllMyBuckets",
+				"s3:ListBucket",
+				"s3:GetObject",
+				"s3:DeleteObject"
+			],
+            "Resource":
+			[
+				"arn:aws:s3:::s3danny",
+				"arn:aws:s3:::s3danny/*",
+				"arn:aws:s3:::*"
+			]
+        }
+    ]
+}
+````
 
 .
 
