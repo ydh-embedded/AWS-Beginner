@@ -46,20 +46,15 @@
 ````ps
         -sudo nano wp-config.php
 ````
-### 13
+### 13 API CODE
 ````ps
-        -API CODE https://api.wordpress.org/secret-key/1.# sa
-    ````
-````ps
-        lt/
+        -https://api.wordpress.org/secret-key/1.1/salt/
 ````
 ### 14
 ````ps
-        -sudo amazon-linux-extras install -y -mariadb10.### 2-
-    ````
-````ps
-        php7.2 php7.2
+        -sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
 ````
+
 ### 15
 ````ps
         -sudo cp -r wordpress/* /var/www/html/
