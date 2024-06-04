@@ -21,7 +21,8 @@
 
 ## install
 
-![Config](./screens/KW20/AWS%20I-invert.png)
+![Config](./AWS/screens/KW20/AWS-I.webp)
+
 
 
 
