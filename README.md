@@ -19,7 +19,7 @@
 
 
 
-## install
+## EC2 Instance anlegen mit Schlüsselpaar
 
 ![Config](./AWS/screens/KW20/AWS-I.webp)
 
