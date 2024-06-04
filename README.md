@@ -86,29 +86,31 @@
 
 DB-Instance-Kennung	(so heißt die Machine):
 
-	db-dannys-aws-machine
+		db-dannys-aws-machine
 
 
 
 HauptbenutzernameInformationen
 Geben Sie eine Anmelde-ID für den Hauptbenutzer Ihrer DB-Instance ein.:
 
-	root
+		root
 
 
 Hauptpasswort:
 
-	Pa$$w0rd
+		Pa$$w0rd
 
 Datenbankoptionen
 Anfänglicher Datenbankname:
 
-	dannysWordpress
+		dannysWordpress
 
 
 Endpunkt und Port:
+````ps
 
 	db-dannys-aws-machine.ctfu1ip0w6hu.eu-central-1.rds.amazonaws.com
+````
 
 
 
@@ -116,63 +118,93 @@ Endpunkt und Port:
 
 i-083725d85cd5f5601 (dannys-EC2-for-Wordpress)
 Öffentliche IPv4-Adresse:
+````ps
 
 	3.72.63.59
+````
 
 
 ## Terminal Befehle Linux Arch :
 
-	
+````ps
+
 	sudo  yum install mysql -y
+````
 
 
 ### Zuweisung der Datenbank zur Machine
+````ps
 
 	export MYSQL_HOST=db-dannys-aws-machine.ctfu1ip0w6hu.eu-central-1.rds.amazonaws.com.
+````
 
 ### DB Anmeldung mit dem User root
+````ps
 
 	mysql -u root -p dannysWordpress
+````
 
 
 ### DB Benutzer 2 anlegen
+````bash
 
 	create user 'adwin' identified by 'password' ;
+````
 
 ### BN: Adwin bekommt alle Rechte an der Datenbank
+````bash
 
 	grant all privileges on wordpress.* to 'adwin';
+````
 
 #### httpd Service & starten
+````ps
 
 	sudo yum install httpd -y
+````
 .
+````ps
 
 	sudo service httpd start
+````
 
 #### wordpress runter laden
+````ps
 
 	wget https://Wordpress.org/latest.tar.gz
+````
 
 #### wordpress entpacken
+````ps
 
 	tar -xzf latest.tar.gz
+````
 
 #### Ordner struktur 
+````ps
 
 	cd wordpress
+````
 .
+````ps
 
 	ls
+````
 .
+````ps
 
 	cp wp-config-sample.php wp-config.php
+````
 .
+````ps
 
 	ls
+````
 .
+````ps
 
 	sudo nano wp-config.php
+````
 .
 	
 	
@@ -203,33 +235,50 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 
 #### extras installieren
+````ps
 
 	sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+````
 
 .
+````ps
 
 	cd
+````
 .
 #### wordpress mit Inhalt in WebServer Standard-Pfad kopiert
+````ps
+
 	sudo cp -r wordpress/* /var/www/html/
+````
 .
+````ps
 
 	sudo service httpd restart
+````
 .	
 #### in auto start einfügen
+````ps
 
 	sudo chkconfig httpd on 
+````
 
 #### ordner vom WebServer anzeigen lasse
+````ps
 
 	cd /var/www/html
+````
 .
+````ps
 
 	ls
+````
 .
 #### Inhalte anzeigen lassen (alternative zu >> tree /f <<)
+````ps
 
 	ls -R -l
+````
 
 #### console clear
 
@@ -247,22 +296,35 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 	PORT:	1024 - 1048		Anywhere	FTP-Zugang
 
 ### Fileserver installieren
+````ps
+
 	sudo yum install vsftpd -y
+````
 
 ### FileServer Config anpassen
+````ps
+
 	sudo nano /etc/vsftpd/vsftpd.conf
+````
 
 ### unter der vsftpd.conf ändern
 
+````conf
+
 	#chroot_local_user=YES
+````
 
 .
+````ps
 
 	chroot_local_user=YES
 	allow_writeable_chroot=YES
+````
 
 .
+
 ### ganz unten ein paar Zeilen in die vsftpd.conf einfügen
+````ps
 
 	pam_service_name=vsftpd
 	userlist_enable=NO
@@ -270,10 +332,12 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 	pasv_min_port=1024
 	pasv_max_port=1048
 	pasv_address=3.68.150.21
+````
 	
 
 .
 ### neuen Benutzer anlegen
+````ps
 
 	sudo adduser danny
 	sudo passwd admin
@@ -282,11 +346,14 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 	cd /var/www/html/
 	sudo usermod -a -G root danny
 	sudo service vsftpd restart
+````
 
 
 ### Filezilla auf dem HOST installieren
+````ps
 
 	https://www.heise.de/download/product/filezilla-18785/download/danke?id=6e520316-e188-4944-9531-92147782457c
+````
 .
 
 .
@@ -295,45 +362,69 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 
 ##
+````ps
 
     sudo yum install nodejs -y
+````
 
 .
+````ps
 
     sudo mdir -p/var/app/
+````
 
 .
+````ps
 
     cd /var/app
+````
 .
+````ps
 
     cd ..
+````
 
 .
+````ps
 
     sudo wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-100-TECESS-5/app/app.zip
+````
 .
+````ps
 
     sudo unzip app.zip -d /var/app/
+````
 .
-    
+````ps
+
     cd  /var/app/
     sudo npm install -y
+````
 .
+````ps
 
     cd ..
+````
 .
+````ps
 
     cd var/app/api/common/
+````
 
 .
+````ps
 
     sudo nano constants.js
+````
 .
-
+````ps
 	sudo upm start
+````
 .
 
+````ps
+
+````
 
 
 
@@ -347,7 +438,8 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 	-	Schlüsselpaare anlegen und verbinden
 
 .
-````json
+````json 
+JSON File für s3 Bucket
 {   "Version": "2024-06-04",
     "Statement": [
         {
