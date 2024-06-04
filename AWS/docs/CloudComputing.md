@@ -1,0 +1,3 @@
+    -   im Skill Builder kann man Übungen starten
+    -   AWS - Cloud Server steht in Frankfurt
+    -   AWS - Cloud ist skalierbar (vertikale skalierung)
