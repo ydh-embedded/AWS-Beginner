@@ -30,9 +30,6 @@
 
 
 
-## EC2 Instance mit Schlüsselpaar anlegen
-
-![Config](./AWS/screens/KW20/AWS-I.webp)
 
 
 
