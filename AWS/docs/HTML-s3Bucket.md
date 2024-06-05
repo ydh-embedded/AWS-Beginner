@@ -4,15 +4,6 @@
     -   ist ein Online Speicher mächtiger als DropBox
     -   kann auch html online verfügbar machen
 
-
-## ![s3Bucket](../screens/KW20/AWS-III-Bucket.webp)
-
-
-    -   wir erstellen einen s3Bucket
-
-## ![s3Bucket](../screens/KW20/AWS-S3-erstellen.webp)
-## ![s3Bucket](../screens/KW20/AWS-S3-erstellen-II.webp)
-
 ##   wir binden eine HTML im Bucket ein
 
 ## ![s3Bucket](../screens/KW20/s3Bucket_mit_html_einbinden.webp)

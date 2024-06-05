@@ -14,7 +14,17 @@
 -	[ Route 53](./AWS/docs/Route53.md)
 -	[SDKs](./AWS/docs/SDKs.md)
 -	[s3](./AWS/docs/s3Bucket.md)
--	[Snow](./AWS/docs/Snow.md)
+-	[CertificateÜbersicht](./AWS/docs/CertificateÜbersicht.md)
+-	[Snow](./AWS/docs/Instance.md)
+-	[EBS-Volumen](./AWS/docs/EBS-Volumen.md)
+-	[HTML-s3Bucket](./AWS/docs/HTML-s3Bucket.md)
+-	[HTML-WIN](./AWS/docs/HTML-WIN.md)
+-	[IAM-Richtlinie](./AWS/docs/IAM-Richtlinie.md)
+-	[Instance](./AWS/docs/Instance.md)
+-	[MFA-Multifactor-Authentifizierung](./AWS/docs/MFA-Multifactor-Authentifizierung.md)
+-	[VPC-erstellen](./AWS/docs/VPC-erstellen.md)
+-	[WebServer-WIN](./AWS/docs/WebServer-WIN.md)
+-	[WordpressUnterLinux](./AWS/docs/WordpressUnterLinux.md)
 
 
 
