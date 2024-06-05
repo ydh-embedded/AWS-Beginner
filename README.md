@@ -382,7 +382,7 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 ````bash
 
-//!SECTION	GNU nano 5.8 constants.js
+// GNU nano 5.8 constants.js
 // Load .env (Only for non-production enviroments)
 if (process.env.NODE_ENV && process.env.NODE_ENV === 'development'){ require('dotenv').config(); } 
 
