@@ -376,17 +376,7 @@ define('NONCE_SALT',       '6{b`NYlyE%9WWjo8/.K25>}2>]>x0JJ5xt3KWTW~X~YL.Y;FuDL+
 
 ## ![Constant-File](../AWS-Beginner/AWS/screens/KW23/constants.js.webp)
 
-
-.
-````ps
-	sudo npm start
-````
-.
-
--	Elemente in AWS erstellen damit die gleichen Attribute angelegt sind!
-
-## ![EmployeerTable](../AWS-Beginner/AWS/screens/KW23/AWS-employeerManagementTable.webp)
-
+	GNU nano 5.8
 ````bash
 
 // Load .env (Only for non-production enviroments)
@@ -403,6 +393,17 @@ exports.TABLE_NAME = 'EmployeerTableVonDanny' ;
 
 
 ````
+
+
+.
+````ps
+	sudo npm start
+````
+.
+
+-	Elemente in AWS erstellen damit die gleichen Attribute angelegt sind!
+
+## ![EmployeerTable](../AWS-Beginner/AWS/screens/KW23/AWS-employeerManagementTable.webp)
 
 
 ````ps
